@@ -20,6 +20,7 @@
           - yt-dlp
           - wakeonlan
           - opentofu
+          - nmap
     - name: Install casks
       ansible.builtin.import_tasks: common/tasks/install_brew_casks.yml
       vars:
