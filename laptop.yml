@@ -44,6 +44,7 @@
           - utm
           - balenaetcher
           - ungoogled-chromium
+          - raspberry-pi-imager
     - name: Ensure ~/.claude directory exists
       ansible.builtin.file:
         path: "~/.claude"
