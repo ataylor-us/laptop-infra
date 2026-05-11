@@ -1,4 +1,4 @@
-# Client infrastructure
+# Client playbook
 
 Base playbook & roles to set up my client (or clients)
 
