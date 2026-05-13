@@ -1,0 +1,9 @@
+---
+- name: Add direnv hook to zshrc
+  ansible.builtin.lineinfile:
+    path: "~/.zshrc"
+    line: 'eval "$(direnv hook zsh)"'
+    create: true
+    owner: "{{ username }}"
+    group: "{{ group }}"
+    mode: "0644"
