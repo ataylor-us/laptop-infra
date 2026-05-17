@@ -1,2 +1,2 @@
-default:
-    ansible-playbook laptop.yml
+laptop-pro:
+    ansible-playbook laptop-pro.yml
