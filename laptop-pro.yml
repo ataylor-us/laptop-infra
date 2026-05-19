@@ -20,6 +20,7 @@
           - yt-dlp
           - wakeonlan
           - opentofu
+          - cdrtools
           - nmap
           - just
     - name: Install casks
