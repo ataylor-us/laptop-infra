@@ -48,6 +48,7 @@
           - balenaetcher
           - ungoogled-chromium
           - raspberry-pi-imager
+          - kitlangton-hex
     - name: Ensure ~/.claude directory exists
       ansible.builtin.file:
         path: "~/.claude"
