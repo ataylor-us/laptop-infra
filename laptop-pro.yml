@@ -23,6 +23,7 @@
           - cdrtools
           - nmap
           - just
+          - findutils
     - name: Install casks
       ansible.builtin.import_tasks: common/tasks/install_brew_casks.yml
       vars:
@@ -49,6 +50,14 @@
           - ungoogled-chromium
           - raspberry-pi-imager
           - kitlangton-hex
+    - name: Add GNU find to PATH
+      ansible.builtin.lineinfile:
+        path: "~/.zshrc"
+        line: 'export PATH="/opt/homebrew/opt/findutils/libexec/gnubin:$PATH"'
+        create: true
+        owner: "{{ username }}"
+        group: "{{ group }}"
+        mode: "0644"
     - name: Ensure ~/.claude directory exists
       ansible.builtin.file:
         path: "~/.claude"
