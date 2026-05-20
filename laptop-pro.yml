@@ -50,6 +50,7 @@
           - ungoogled-chromium
           - raspberry-pi-imager
           - kitlangton-hex
+          - claudebar
     - name: Add GNU find to PATH
       ansible.builtin.lineinfile:
         path: "~/.zshrc"
