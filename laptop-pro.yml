@@ -52,6 +52,7 @@
           - kitlangton-hex
           - claudebar
           - claude
+          - jordanbaird-ice
     - name: Add GNU find to PATH
       ansible.builtin.lineinfile:
         path: "~/.zshrc"
