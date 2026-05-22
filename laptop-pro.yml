@@ -24,6 +24,7 @@
           - nmap
           - just
           - findutils
+          - resvg
     - name: Install casks
       ansible.builtin.import_tasks: common/tasks/install_brew_casks.yml
       vars:
@@ -52,7 +53,7 @@
           - kitlangton-hex
           - claudebar
           - claude
-          - jordanbaird-ice
+          - cursor
     - name: Add GNU find to PATH
       ansible.builtin.lineinfile:
         path: "~/.zshrc"
@@ -133,7 +134,6 @@
     - version_control
     - terminal
     - pim_client
-    - ide
     - file_sync_client
     - file_manager
     - feed_client
