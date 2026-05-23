@@ -81,6 +81,7 @@
     - feed_client
     - email_client
     - editor
+    - ide
     - credentials
     - automation
     - containers

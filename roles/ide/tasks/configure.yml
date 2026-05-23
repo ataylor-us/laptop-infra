@@ -1,0 +1,7 @@
+---
+- name: Disable press and hold for Cursor
+  community.general.osx_defaults:
+    domain: com.todesktop.230313mzl4w4u92
+    key: ApplePressAndHoldEnabled
+    type: bool
+    value: false
