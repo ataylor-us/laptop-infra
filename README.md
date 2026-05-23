@@ -1,8 +1,7 @@
-# Client playbook
+# Laptop playbook
 
-Base playbook & roles to set up my client (or clients)
+Base playbook & roles to set up my laptop.  Currently a MacBook Pro M5.
 
 ```bash
-# Currently just my MacBook Pro
 ansible-playbook laptop.yml
 ```
