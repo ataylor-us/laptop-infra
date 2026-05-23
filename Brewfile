@@ -1,0 +1,54 @@
+# Formulae
+brew "cdrtools"
+brew "fd"
+brew "findutils"
+brew "fzf"
+brew "gitleaks"
+brew "just"
+brew "mas"
+brew "nmap"
+brew "opentofu"
+brew "poppler"
+brew "resvg"
+brew "ripgrep"
+brew "rsync"
+brew "shellcheck"
+brew "trufflehog"
+brew "wakeonlan"
+brew "yt-dlp"
+brew "zsh-autosuggestions"
+brew "zsh-completions"
+
+# Casks
+cask "balenaetcher"
+cask "caffeine"
+cask "calibre"
+cask "claude"
+cask "claude-code"
+cask "claudebar"
+cask "cursor"
+cask "discord"
+cask "font-noto-nerd-font"
+cask "iina"
+cask "iterm2"
+cask "jagex"
+cask "kitlangton-hex"
+cask "logi-options+"
+cask "obsidian"
+cask "ollama-app"
+cask "onlyoffice"
+cask "raspberry-pi-imager"
+cask "runelite"
+cask "signal"
+cask "spotify"
+cask "steam"
+cask "tailscale-app"
+cask "ungoogled-chromium"
+cask "utm"
+
+# Mac App Store
+mas "Notability", id: 360593530
+mas "Parcel", id: 375589283
+mas "Pixelmator Pro", id: 1289583905
+mas "Bitwarden", id: 1352778147
+mas "Windows App", id: 1295203466

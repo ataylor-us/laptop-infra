@@ -5,57 +5,6 @@
     group: staff
     neomutt_theme: "https://raw.githubusercontent.com/marcothms/mutt-nord/refs/heads/master/nord.theme"
   tasks:
-    - name: Install formulae
-      ansible.builtin.import_tasks: common/tasks/install_brew_formulae.yml
-      vars:
-        brew_formulae:
-          - fd
-          - ripgrep
-          - rsync
-          - shellcheck
-          - zsh-completions
-          - fzf
-          - zsh-autosuggestions
-          - poppler
-          - yt-dlp
-          - wakeonlan
-          - opentofu
-          - cdrtools
-          - nmap
-          - just
-          - findutils
-          - resvg
-          - gitleaks
-          - trufflehog
-    - name: Install casks
-      ansible.builtin.import_tasks: common/tasks/install_brew_casks.yml
-      vars:
-        brew_casks:
-          - caffeine
-          - discord
-          - jagex
-          - obsidian
-          - runelite
-          - signal
-          - tailscale-app
-          - iina
-          - claude-code
-          - spotify
-          - steam
-          - logi-options+
-          - onlyoffice
-          - ollama-app
-          - iterm2
-          - font-noto-nerd-font
-          - calibre
-          - utm
-          - balenaetcher
-          - ungoogled-chromium
-          - raspberry-pi-imager
-          - kitlangton-hex
-          - claudebar
-          - claude
-          - cursor
     - name: Add GNU find to PATH
       ansible.builtin.lineinfile:
         path: "~/.zshrc"
@@ -77,15 +26,6 @@
           }
         dest: "~/.claude/settings.json"
         mode: "0644"
-    - name: Install apps
-      ansible.builtin.import_tasks: common/tasks/install_mas_apps.yml
-      vars:
-        mas_apps:
-          - 360593530 # Notability
-          - 375589283 # Parcel
-          - 1289583905 # Pixelmator Pro
-          - 1352778147 # Bitwarden
-          - 1295203466 # Windows App
     - name: Uninstall apps
       ansible.builtin.import_tasks: common/tasks/uninstall_mas_apps.yml
       vars:
