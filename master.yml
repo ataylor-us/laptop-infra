@@ -13,19 +13,6 @@
         owner: "{{ username }}"
         group: "{{ group }}"
         mode: "0644"
-    - name: Ensure ~/.claude directory exists
-      ansible.builtin.file:
-        path: "~/.claude"
-        state: directory
-        mode: "0755"
-    - name: Configure Claude Code settings
-      ansible.builtin.copy:
-        content: |
-          {
-            "autoUpdatesChannel": "stable"
-          }
-        dest: "~/.claude/settings.json"
-        mode: "0644"
     - name: Uninstall apps
       ansible.builtin.import_tasks: common/tasks/uninstall_mas_apps.yml
       vars:

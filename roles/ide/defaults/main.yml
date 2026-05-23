@@ -1,3 +1,4 @@
 ---
 brew_casks:
   - cursor
+  - claude
