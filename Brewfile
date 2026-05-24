@@ -22,6 +22,7 @@ brew "zsh-completions"
 
 # Casks
 cask "balenaetcher"
+cask "bartender"
 cask "caffeine"
 cask "calibre"
 cask "claude-code"
