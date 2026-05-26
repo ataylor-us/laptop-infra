@@ -43,7 +43,6 @@ cask "signal"
 cask "spotify"
 cask "steam"
 cask "tailscale-app"
-cask "tolaria"
 cask "ungoogled-chromium"
 cask "utm"
 
