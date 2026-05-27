@@ -1,4 +1,5 @@
 # Formulae
+brew "bat"
 brew "block-goose-cli"
 brew "cdrtools"
 brew "fd"
