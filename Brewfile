@@ -1,4 +1,5 @@
 # Formulae
+brew "block-goose-cli"
 brew "cdrtools"
 brew "fd"
 brew "findutils"
@@ -23,6 +24,7 @@ brew "zsh-completions"
 # Casks
 cask "balenaetcher"
 cask "betterdisplay"
+cask "block-goose"
 cask "caffeine"
 cask "calibre"
 cask "claude-code"
