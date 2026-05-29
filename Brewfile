@@ -49,6 +49,12 @@ cask "tailscale-app"
 cask "ungoogled-chromium"
 cask "utm"
 
+# Cursor Extensions
+vscode "anthropic.claude-code"
+vscode "anysphere.remote-ssh"
+vscode "redhat.vscode-yaml"
+vscode "vscodevim.vim"
+
 # Mac App Store
 mas "Notability", id: 360593530
 mas "Parcel", id: 375589283
