@@ -60,7 +60,6 @@ cask "iterm2"
 cask "jagex"
 cask "keka"
 cask "kitlangton-hex"
-cask "lm-studio"
 cask "moonlight"
 cask "onlyoffice"
 cask "parsec"
@@ -71,7 +70,6 @@ cask "signal"
 cask "syncthing-app"
 cask "tailscale-app"
 cask "ungoogled-chromium"
-cask "wifiman"
 
 # Mac App Store
 mas "Parcel", id: 375589283
