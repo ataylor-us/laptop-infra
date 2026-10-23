@@ -48,6 +48,7 @@ brew "zsh-completions"
 
 # Casks
 cask "balenaetcher"
+cask "basictex"
 cask "betterdisplay"
 cask "caffeine"
 cask "claude-code@latest"
