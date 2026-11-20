@@ -14,6 +14,17 @@
     mode: "0664"
     create: true
     state: present
+- name: Set edit-command-line for zsh vi mode
+  ansible.builtin.lineinfile:
+    path: "~/.zshrc"
+    line: "{{ item }}"
+    mode: "0644"
+    create: true
+    state: present
+  loop:
+    - "autoload -Uz edit-command-line"
+    - "zle -N edit-command-line"
+    - "bindkey -M vicmd v edit-command-line"
 - name: Create neovim config directory
   ansible.builtin.file:
     group: "{{ group }}"
