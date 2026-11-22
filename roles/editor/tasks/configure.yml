@@ -39,6 +39,20 @@
     group: "{{ group }}"
     mode: "0644"
     owner: "{{ username }}"
+- name: Create opencode config directory
+  ansible.builtin.file:
+    group: "{{ group }}"
+    mode: "0755"
+    owner: "{{ username }}"
+    path: "~/.config/opencode"
+    state: directory
+- name: Copy opencode config
+  ansible.builtin.template:
+    src: opencode.jsonc.j2
+    dest: ~/.config/opencode/opencode.jsonc
+    group: "{{ group }}"
+    mode: "0644"
+    owner: "{{ username }}"
 - name: Create local bin directory
   ansible.builtin.file:
     group: "{{ group }}"
