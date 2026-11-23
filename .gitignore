@@ -10,4 +10,3 @@ ansible.log
 *.tfstate
 *.tfstate.backup
 .terraform.lock.hcl
-group_vars/all/private.yml

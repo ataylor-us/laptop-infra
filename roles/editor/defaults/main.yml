@@ -1,3 +1,4 @@
 ---
 brew_formulae:
   - neovim
+  - opencode
