@@ -1,0 +1,28 @@
+# Ansible managed
+# Font
+font-family = "Terminess Nerd Font"
+font-size = 22
+adjust-cell-height = -20%
+
+# Window
+window-padding-x = 10
+window-padding-y = 8
+window-padding-balance = true
+background-opacity = 0.95
+theme = Adwaita Dark
+
+# Behavior
+macos-option-as-alt = true
+mouse-hide-while-typing = true
+copy-on-select = clipboard
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+
+# Dropdown (quick terminal)
+keybind = global:cmd+shift+space=toggle_quick_terminal
+quick-terminal-position = top
+quick-terminal-size = 65%
+quick-terminal-screen = mouse
+quick-terminal-autohide = true
+quick-terminal-animation-duration = 0

@@ -32,3 +32,17 @@
     owner: "{{ username }}"
     group: "{{ group }}"
     mode: "0644"
+- name: Create ghostty config directory
+  ansible.builtin.file:
+    group: "{{ group }}"
+    mode: "0755"
+    owner: "{{ username }}"
+    path: "~/Library/Application Support/com.mitchellh.ghostty"
+    state: directory
+- name: Copy ghostty config
+  ansible.builtin.copy:
+    src: config.ghostty
+    dest: "~/Library/Application Support/com.mitchellh.ghostty/config.ghostty"
+    group: "{{ group }}"
+    mode: "0644"
+    owner: "{{ username }}"
